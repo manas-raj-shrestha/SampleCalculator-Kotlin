@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.droid.manasshrestha.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_weight="0.3"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="end|bottom"
+        android:textColor="#D5D2D2"
+        android:textSize="20sp"
+        tools:text="300+400" />
+
+    <TextView
+        android:id="@+id/tv_expression"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/tv_result"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_weight="0.7"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="end|bottom"
+        android:textColor="#F7F7F7"
+        android:textSize="70sp"
+        tools:text="300" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/tv_expression"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_weight="0.01"
+        android:background="#D5D2D2" />
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv_expression"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1.99"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/CalculatorButtons"
+            android:tag="operation"
+            android:text="C"
+            android:textColor="#F7F7F7" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/CalculatorButtons"
+            android:tag="operation"
+            android:text="⌫"
+            android:textColor="#F7F7F7" />
+
+        <Button
+            android:id="@+id/btn_percentage"
+            style="@style/CalculatorButtons"
+            android:tag="operator"
+            android:text="%"
+            android:textColor="#F7F7F7" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            style="@style/CalculatorButtons"
+            android:tag="operator"
+            android:text="/"
+            android:textColor="#F16E6E" />
+
+        <Button
+            android:id="@+id/btn_seven"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="7"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_eight"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="8"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_nine"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="9"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            style="@style/CalculatorButtons"
+            android:tag="operator"
+            android:text="x"
+            android:textColor="#F16E6E" />
+
+
+        <Button
+            android:id="@+id/btn_four"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="4"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_five"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="5"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_six"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="6"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_subtract"
+            style="@style/CalculatorButtons"
+            android:tag="operator"
+            android:text="-"
+            android:textColor="#F16E6E" />
+
+        <Button
+            android:id="@+id/btn_one"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="1"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_two"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="2"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_three"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="3"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/CalculatorButtons"
+            android:tag="operator"
+            android:text="+"
+            android:textColor="#F16E6E" />
+
+        <Button
+            android:id="@+id/btn_double_zero"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="00"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_zero"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="0"
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:id="@+id/btn_decimal_point"
+            style="@style/CalculatorButtons"
+            android:tag="number"
+            android:text="."
+            android:textColor="#D5D2D2" />
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:id="@+id/btn_equals"
+            style="@style/CalculatorButtons"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circular_background"
+            android:tag="operation"
+            android:text="="
+            android:textColor="#F7F7F7" />
+
+    </GridLayout>
+
+</LinearLayout>
